@@ -4,6 +4,12 @@ import streamlit as st
 st.set_page_config(page_title="Vocab Dictionary", page_icon="📚", layout="centered")
 
 st.title("📚 Vocab Dictionary")
+with st.expander("📱 Telefona uygulama gibi ekle"):
+    st.markdown("""
+**Android (Chrome):** ⋮ → **Ana ekrana ekle**
+
+**iPhone (Safari):** Paylaş (⬆️) → **Ana Ekrana Ekle**
+""")
 st.write("Doğru seçeneği işaretle. Next ile yeni soruya geç.")
 
 WORDS = [
@@ -72,3 +78,4 @@ with col3:
 
 st.divider()
 st.metric("Score", st.session_state.score)
+
